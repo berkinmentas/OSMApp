@@ -12,8 +12,12 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int pointId { get; set; }
-        public string pointName { get; set; }
+        public string PointName { get; set; }
+        public string PointNumber { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        public DateTime CreatedAt { get; set; } 
+
+        public DateTime UpdatedAt { get; set; }
     }
 }

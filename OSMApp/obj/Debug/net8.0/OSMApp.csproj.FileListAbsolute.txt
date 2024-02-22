@@ -108,3 +108,4 @@ C:\Users\berkin\source\repos\OSMApp\OSMApp\obj\Debug\net8.0\refint\OSMApp.dll
 C:\Users\berkin\source\repos\OSMApp\OSMApp\obj\Debug\net8.0\OSMApp.pdb
 C:\Users\berkin\source\repos\OSMApp\OSMApp\obj\Debug\net8.0\OSMApp.genruntimeconfig.cache
 C:\Users\berkin\source\repos\OSMApp\OSMApp\obj\Debug\net8.0\ref\OSMApp.dll
+C:\Users\berkin\source\repos\OSMApp\OSMApp\obj\Debug\net8.0\OSMApp.sourcelink.json

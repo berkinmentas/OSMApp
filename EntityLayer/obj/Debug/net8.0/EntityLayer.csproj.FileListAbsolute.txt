@@ -12,3 +12,4 @@ C:\Users\berkin\source\repos\OSMApp\EntityLayer\obj\Debug\net8.0\refint\EntityLa
 C:\Users\berkin\source\repos\OSMApp\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
 C:\Users\berkin\source\repos\OSMApp\EntityLayer\obj\Debug\net8.0\EntityLayer.genruntimeconfig.cache
 C:\Users\berkin\source\repos\OSMApp\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll
+C:\Users\berkin\source\repos\OSMApp\EntityLayer\obj\Debug\net8.0\EntityLayer.sourcelink.json

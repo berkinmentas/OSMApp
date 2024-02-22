@@ -17,3 +17,4 @@ C:\Users\berkin\source\repos\OSMApp\BusinessLayer\obj\Debug\net8.0\refint\Busine
 C:\Users\berkin\source\repos\OSMApp\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 C:\Users\berkin\source\repos\OSMApp\BusinessLayer\obj\Debug\net8.0\BusinessLayer.genruntimeconfig.cache
 C:\Users\berkin\source\repos\OSMApp\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+C:\Users\berkin\source\repos\OSMApp\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json

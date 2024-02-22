@@ -15,3 +15,4 @@ C:\Users\berkin\source\repos\OSMApp\DataAccessLayer\obj\Debug\net8.0\refint\Data
 C:\Users\berkin\source\repos\OSMApp\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\berkin\source\repos\OSMApp\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\berkin\source\repos\OSMApp\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\berkin\source\repos\OSMApp\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
