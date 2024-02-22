@@ -36,9 +36,44 @@ namespace BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
+        public Point TGetByName(string PointName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Point TGetByNumber(string PointNumber)
+        {
+            return _PointDal.GetByNumber(PointNumber);
+        }
+
         public void TUpdate(Point t)
         {
             _PointDal.Update(t);
+        }
+
+        public Point TGetByNumberAndName(string PointNumber, string PointName)
+        {
+            return _PointDal.GetByNumberAndName(PointNumber, PointName);
+        }
+
+        public Point TGetByXYAndName(double? Latitude, double? Longitude, string PointName)
+        {
+            return _PointDal.GetByXYAndName(Latitude, Longitude, PointName);
+        }
+
+        public Point TGetByXYAndNumber(string PointNumber, double? Longitude, double? Latitude)
+        {
+            return _PointDal.GetByXYAndNumber(PointNumber, Longitude, Latitude);
+        }
+
+        public Point TGetByXY(double? Latitude, double? Longitude)
+        {
+            return _PointDal.GetByXY(Latitude, Longitude);
+        }
+
+        public Point TGetByNumberAndNameAndXY(string PointNumber, string PointName, double? Latitude, double? Longitude)
+        {
+            return _PointDal.GetByNumberAndNameAndXY(PointNumber, PointName, Latitude, Longitude);
         }
     }
 }
