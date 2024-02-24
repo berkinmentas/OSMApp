@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -11,11 +12,19 @@ namespace BusinessLayer.Concrete
 {
     public class PointManager : IPointService
     {
-        IPointDal _PointDal;
+        private readonly IPointDal _PointDal;
+
+        public PointManager(Context context)
+        {
+            _PointDal = (IPointDal?)(context ?? throw new ArgumentNullException(nameof(context)));
+
+        }
+
         public PointManager(IPointDal pointDal)
         {
-            _PointDal = pointDal;
+            _PointDal = pointDal ?? throw new ArgumentNullException(nameof(pointDal));
         }
+      
         public List<Point> GetList()
         {
             return _PointDal.GetList();
@@ -38,7 +47,7 @@ namespace BusinessLayer.Concrete
 
         public Point TGetByName(string PointName)
         {
-            throw new NotImplementedException();
+           return  _PointDal.GetByName(PointName);
         }
 
         public Point TGetByNumber(string PointNumber)
