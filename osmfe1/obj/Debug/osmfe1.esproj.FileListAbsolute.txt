@@ -1,0 +1,2 @@
+C:\Users\berkin\Desktop\osmfe1\obj\Debug\osmfe1.esproj.CoreCompileInputs.cache
+C:\Users\berkin\source\repos\OSMApp\osmfe1\obj\Debug\osmfe1.esproj.CoreCompileInputs.cache
