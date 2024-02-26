@@ -50,12 +50,35 @@ const MapComponent = ({ onCoordinateClick }) => {
 
         map.on('click', handleMapClick);
 
+        fetchCoordinatesFromDatabase(map);
+
         return () => {
             map.removeControl(mousePositionControl);
             map.un('click', handleMapClick);
             map.dispose();
         };
     }, []);
+
+    const fetchCoordinatesFromDatabase = async (map) => {
+        try {
+            const response = await fetch('https://localhost:7160/api/point?PointName=&PointNumber=&Latitude=&Longitude=');
+            if (!response.ok) {
+                throw new Error('Failed to fetch coordinates from the database');
+            }
+            const data = await response.json();
+            const valuesArray = Object.keys(data).map(key => data[key]);
+            valuesArray[0].forEach(coordinate => {
+                const { latitude, longitude } = coordinate;
+                console.log("cor" + coordinate);
+                const coord = [latitude, longitude];
+                addLocationIconToMap(map, coord);
+                console.log("coord" + coord);
+
+            });
+        } catch (error) {
+            console.error('Error fetching coordinates from the database:', error);
+        }
+    };
 
     const addLocationIconToMap = (map, coord) => {
         const iconStyle = new Style({
